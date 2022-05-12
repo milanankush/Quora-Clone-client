@@ -8,7 +8,7 @@ function Feed() {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     axios
-      .get(`/api/questions`)
+      .get(`https://quora-cloned-server.herokuapp.com/api/questions`)
       .then((res) => {
         console.log(res.data.reverse());
         setPosts(res.data);

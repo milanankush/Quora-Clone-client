@@ -41,7 +41,7 @@ function QuoraHeader() {
         user: user,
       };
       await axios
-        .post(`/api/questions`, body, config)
+        .post(`https://quora-cloned-server.herokuapp.com/api/questions`, body, config)
         .then((res) => {
           console.log(res.data);
           alert(res.data.message);

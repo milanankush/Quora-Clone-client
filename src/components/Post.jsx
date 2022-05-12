@@ -50,7 +50,7 @@ function Post({ post }) {
         user: user,
       };
       axios
-        .post("/api/answers", body, config)
+        .post("https://quora-cloned-server.herokuapp.com/api/answers", body, config)
         .then((res) => {
           console.log(res.data);
           alert(`Answer added successfully`);
