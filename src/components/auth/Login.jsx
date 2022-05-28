@@ -12,6 +12,18 @@ function Login() {
         console.log(err);
       });
   };
+  // firebase.auth().signInWithPopup(provider).then(function(result) {
+  //   // code which runs on success
+  // }).catch(function(error) {
+  //   // Handle Errors here.
+  //   var errorCode = error.code;
+  //   console.log(errorCode);
+  //   alert(errorCode);
+  
+  //   var errorMessage = error.message;
+  //   console.log(errorMessage);
+  //   alert(errorMessage);
+  // });
   return (
     <div className="login-container">
       <div className="login-content">
